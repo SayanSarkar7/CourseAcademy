@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  padding: 5rem;
+  box-sizing: border-box;
+  background-color: pink;
+}
+.vector-graphics {
+  filter: drop-shadow(0 40px 10px rgb(0, 0, 0, 0.3));
+  animation: vectorAnimation 1s infinite alternate;
+}
+@keyframes vectorAnimation {
+  to {
+    transform: translateY(-10px);
+  }
+}
+.brandsBanner > svg {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.5s;
+}
+.brandsBanner > svg:hover {
+  color: rgb(255, 221, 0);
+}
+.container2 {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  position: relative; /* Allows absolute positioning of the video */
+}
+.container2 > video {
+  position: absolute; /* Position the video absolutely within the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Shift the video to center it */
+  width: 60%; /* Take full width of the container */
+  height: 80%; /*Maintain aspect ratio
+  max-width:fit-content; /* Allow full width for the video */
+  max-height: 100%; /* Ensures the video doesn't exceed container height */
+  object-fit: contain; /* Ensures video fits without cropping */
+  border: 1px solid rgb(0, 0, 0, 0.18);
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .container2 {
+    > video {
+      width: 96%;
+    }
+  }
+}
