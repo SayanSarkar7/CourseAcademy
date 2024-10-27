@@ -22,9 +22,9 @@ const Home = () => {
             spacing={["16","56"]}
             backgroundColor={"red.100"}
             >
-              <VStack width={"full"} alignItems={["center","flex-end"]}>
-                <Heading children={"LEARN FROM EXPERTS"} size={"2xl"}/>
-                <Text children={"Find Valuable Content At Reasonable Price"}/>
+              <VStack width={"full"} alignItems={["center","flex-end"]} spacing={'6'}>
+                <Heading textAlign={['center','left']} children={"LEARN FROM EXPERTS"} size={"2xl"}/>
+                <Text textAlign={['center','left']} children={"Find Valuable Content At Reasonable Price"} fontSize={'xl'} fontFamily={'cursive'}/>
                 <Link to="/courses">
                   <Button size={"lg"} colorScheme={"yellow"}>Explore Now</Button>
                 </Link>
