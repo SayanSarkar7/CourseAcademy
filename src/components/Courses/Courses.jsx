@@ -5,12 +5,13 @@ import {
   HStack,
   Image,
   Input,
-  Link,
   Stack,
   Text,
   VStack,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Course = ({
   views,
@@ -56,7 +57,7 @@ const Course = ({
         textTransform={'uppercase'}
       />
       <Stack direction={['column', 'row']} alignItems={'center'}>
-        <Link to={`course/${id}`}>
+        <Link to={`/course/${id}`}>
           <Button colorScheme={'yellow'}>Watch Now</Button>
         </Link>
         <Button
@@ -124,8 +125,8 @@ const Courses = () => {
           title={'sample'}
           imgSrc={
             'https://cdn.pixabay.com/photo/2024/10/26/14/12/ai-generated-9151277_1280.jpg'
-          }
-          id={'sample'}
+          } 
+          id={'sample'} 
           creator={'sample boy'}
           description={'sample'}
           lectureCount={2}
