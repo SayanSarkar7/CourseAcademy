@@ -21,7 +21,7 @@ const Header = () => {
       <Button variant={'ghost'}>{title}</Button>
     </Link>
   );
-  const isAuenticated = false;
+  const isAuenticated = true;
   const user = {
     role: 'admin',
   };
