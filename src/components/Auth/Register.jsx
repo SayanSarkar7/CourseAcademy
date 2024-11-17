@@ -36,7 +36,7 @@ import {
     const [image, setImage] = useState('');
 
 
-    const changeImageHandler=e=>{
+     const changeImageHandler=e=>{
       const file=e.target.files[0];
       const reader=new FileReader();
       reader.readAsDataURL(file);
