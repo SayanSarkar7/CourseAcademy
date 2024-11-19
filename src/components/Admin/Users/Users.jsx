@@ -48,7 +48,7 @@ const Users = () => {
         cursor: `url(${cursor1}) 16 16, pointer`, // Ensuring fallback and hot spot
       }}
     >
-      <Box p={['0', '16']}>
+      <Box p={['0', '16']} overflowX={'auto'} >
         <Heading
           children={'All Users'}
           textTransform={'uppercase'}
